@@ -37,8 +37,8 @@ export function Header() {
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-3 group">
             <div className="relative">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-105 transition-transform">
-                <span className="text-primary-foreground font-bold text-lg">N</span>
+              <div className="w-10 h-10 rounded-lg  flex items-center justify-center group-hover:scale-105 transition-transform">
+                <img src="/images/nexoisem_logo.jpeg" alt="NEXO ISEM Logo" className="w-8 h-8 object-cover rounded-lg" />
               </div>
               <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary border-2 border-background" />
             </div>

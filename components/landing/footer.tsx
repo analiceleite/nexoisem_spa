@@ -24,15 +24,16 @@ export function Footer() {
     <footer className="bg-secondary text-secondary-foreground relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
-      
+
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="#home" className="flex items-center gap-3 mb-6 group">
               <div className="relative">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-105 transition-transform">
-                  <span className="text-primary-foreground font-bold text-xl">N</span>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+                  <img src="/images/nexoisem_logo.jpeg" alt="NEXO ISEM Logo" className="w-8 h-8 object-cover rounded-lg" />
+
                 </div>
                 <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary border-2 border-secondary" />
               </div>
@@ -42,7 +43,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-secondary-foreground/70 max-w-md mb-8 leading-relaxed">
-              Especialistas em conformidade NR-12, laudos técnicos e gestão inteligente de manutenção industrial. 
+              Especialistas em conformidade NR-12, laudos técnicos e gestão inteligente de manutenção industrial.
               Transformamos segurança em produtividade com tecnologia de ponta.
             </p>
             <div className="space-y-3">

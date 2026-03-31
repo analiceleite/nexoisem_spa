@@ -44,7 +44,7 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const whatsappMessage = `Olá! Meu nome é ${formData.name} e gostaria de conhecer mais sobre os serviços da NEXO ISEM.%0A%0AEmpresa: ${formData.company}%0AE-mail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`
+    const whatsappMessage = `Olá! Meu nome é ${formData.name}%0A%0AEmpresa: ${formData.company}%0AE-mail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`
     window.open(`https://wa.me/5547984883707?text=${whatsappMessage}`, "_blank")
   }
 

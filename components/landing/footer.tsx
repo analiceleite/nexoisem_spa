@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Cpu, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, Cpu, Mail, MapPin, Phone } from "lucide-react"
 
 const navigation = [
   { name: "Início", href: "#home" },
@@ -16,51 +16,62 @@ const services = [
   "Manutenção Industrial",
   "ManuTech",
   "Emissão de ART",
-  "Consultoria Técnica",
+  "Consultoria técnica",
 ]
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
+    <footer className="relative overflow-hidden bg-black text-white">
+      <div className="absolute inset-0 bg-black" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {/* Brand */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.16)_25%,rgba(68,68,68,.16)_50%,transparent_50%,transparent_75%,rgba(68,68,68,.16)_75%,rgba(68,68,68,.16))] bg-[length:56px_56px]" />
+      </div>
+
+      <div className="pointer-events-none absolute -left-24 top-1/3 h-[28rem] w-[28rem] rounded-full bg-emerald-500/15 blur-[150px]" />
+
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div className="lg:col-span-2">
-            <Link href="#home" className="flex items-center gap-3 mb-6 group">
-              <div className="relative">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
-                  <img src="/images/nexoisem_logo.jpeg" alt="NEXO ISEM Logo" className="w-8 h-8 object-cover rounded-lg" />
-
-                </div>
-                <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary border-2 border-secondary" />
+            <Link href="#home" className="group mb-6 flex items-center gap-3">
+              <div className="relative rounded-xl border border-emerald-400/30 bg-white/5 p-2 transition-colors group-hover:border-emerald-400/60">
+                <img src="/images/nexoisem_logo.jpeg" alt="NEXO ISEM Logo" className="h-8 w-8 rounded-lg object-cover" />
+                <div className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full border-2 border-black bg-emerald-400" />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-secondary-foreground leading-tight">NEXO ISEM</span>
-                <span className="text-sm text-secondary-foreground/60 leading-tight">Engenharia Conectada ao Futuro</span>
+                <span className="text-xl font-bold leading-tight text-white">NEXO ISEM</span>
+                <span className="text-sm leading-tight text-slate-400">Engenharia conectada ao futuro</span>
               </div>
             </Link>
-            <p className="text-secondary-foreground/70 max-w-md mb-8 leading-relaxed">
-              Especialistas em conformidade NR-12, laudos técnicos e gestão inteligente de manutenção industrial.
-              Transformamos segurança em produtividade com tecnologia de ponta.
+
+            <p className="mb-8 max-w-md leading-relaxed text-slate-300">
+              Especialistas em conformidade com normas regulamentadoras, laudos técnicos e gestão inteligente de
+              manutenção industrial.
             </p>
+
             <div className="space-y-3">
-              <a href="tel:+5547984883707" className="flex items-center gap-3 text-sm text-secondary-foreground/70 hover:text-primary transition-colors group">
-                <div className="w-8 h-8 rounded-lg bg-secondary-foreground/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+              <a
+                href="tel:+5547984883707"
+                className="group flex items-center gap-3 text-sm text-slate-300 transition-colors hover:text-emerald-300"
+              >
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition-colors group-hover:border-emerald-400/40 group-hover:bg-emerald-500/10">
                   <Phone className="h-4 w-4" />
                 </div>
                 <span>(47) 98488-3707</span>
               </a>
-              <a href="mailto:nexoisem@gmail.com" className="flex items-center gap-3 text-sm text-secondary-foreground/70 hover:text-primary transition-colors group">
-                <div className="w-8 h-8 rounded-lg bg-secondary-foreground/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+
+              <a
+                href="mailto:nexoisem@gmail.com"
+                className="group flex items-center gap-3 text-sm text-slate-300 transition-colors hover:text-emerald-300"
+              >
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition-colors group-hover:border-emerald-400/40 group-hover:bg-emerald-500/10">
                   <Mail className="h-4 w-4" />
                 </div>
                 <span>nexoisem@gmail.com</span>
               </a>
-              <div className="flex items-center gap-3 text-sm text-secondary-foreground/70">
-                <div className="w-8 h-8 rounded-lg bg-secondary-foreground/5 flex items-center justify-center">
+
+              <div className="flex items-center gap-3 text-sm text-slate-300">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
                   <MapPin className="h-4 w-4" />
                 </div>
                 <span>Rua Irani 431, Floresta - Joinville/SC</span>
@@ -68,10 +79,9 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h3 className="font-semibold text-secondary-foreground mb-6 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+            <h3 className="mb-5 flex items-center gap-2 font-semibold text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               Navegação
             </h3>
             <ul className="space-y-3">
@@ -79,25 +89,24 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-secondary-foreground/70 hover:text-primary transition-colors inline-flex items-center gap-1 group"
+                    className="group inline-flex items-center gap-1 text-sm text-slate-300 transition-colors hover:text-emerald-300"
                   >
                     {item.name}
-                    <ArrowUpRight className="h-3 w-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                    <ArrowUpRight className="h-3 w-3 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Services */}
           <div>
-            <h3 className="font-semibold text-secondary-foreground mb-6 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+            <h3 className="mb-5 flex items-center gap-2 font-semibold text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               Serviços
             </h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service} className="text-sm text-secondary-foreground/70">
+                <li key={service} className="text-sm text-slate-300">
                   {service}
                 </li>
               ))}
@@ -105,21 +114,11 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-secondary-foreground/10 mt-12 pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-secondary-foreground/50">
+        <div className="mt-12 border-t border-white/10 pt-7">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-sm text-slate-400">
               {new Date().getFullYear()} NEXO ISEM Análise em Equipamentos. Todos os direitos reservados.
             </p>
-            <div className="flex items-center gap-4">
-              <p className="text-sm text-secondary-foreground/50">
-                CNPJ: 59.868.472/0001-03
-              </p>
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/20 text-primary text-xs font-medium">
-                <Cpu className="h-3 w-3" />
-                ManuTech
-              </div>
-            </div>
           </div>
         </div>
       </div>

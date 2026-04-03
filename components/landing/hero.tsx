@@ -13,7 +13,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.16)_25%,rgba(68,68,68,.16)_50%,transparent_50%,transparent_75%,rgba(68,68,68,.16)_75%,rgba(68,68,68,.16))] bg-[length:56px_56px]" />
       </div>
 
-      <div className="pointer-events-none absolute -left-40 top-1/3 h-[36rem] w-[36rem] rounded-full bg-emerald-500/15 blur-[170px]" />
+      <div className="pointer-events-none absolute -left-40 top-1/3 hidden h-[36rem] w-[36rem] rounded-full bg-emerald-500/15 blur-[170px] lg:block" />
 
       <style jsx>{`
         @keyframes shimmer {
@@ -73,8 +73,8 @@ export function Hero() {
         }
       `}</style>
 
-      <div className="relative z-20 grid min-h-[calc(100vh-4rem)] w-full lg:grid-cols-[1.08fr_0.92fr]">
-        <div className="flex items-center px-4 py-12 sm:px-8 sm:py-16 lg:justify-end lg:px-12 xl:px-20">
+      <div className="relative z-20 flex min-h-[calc(100vh-4rem)] w-full flex-col lg:grid lg:grid-cols-[1.08fr_0.92fr]">
+        <div className="order-2 flex items-center px-4 py-12 sm:px-8 sm:py-16 lg:order-1 lg:justify-end lg:px-12 xl:px-20">
           <div className="flex w-full max-w-xl flex-col gap-6 lg:ml-auto lg:max-w-[42rem]">
             <div className="animate-slide-in-up opacity-0">
               <div className="inline-flex w-fit items-center gap-3 rounded-full border border-emerald-400/50 bg-gradient-to-r from-emerald-500/25 to-green-500/10 px-4 py-2 text-sm font-medium text-emerald-300 backdrop-blur-md transition-all duration-300 hover:border-emerald-400/80 hover:shadow-lg hover:shadow-emerald-500/20">
@@ -152,7 +152,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="animate-slide-in-right relative flex min-h-[42vh] items-center opacity-0 delay-500 lg:min-h-[calc(100vh-4rem)] lg:justify-start lg:py-12">
+        <div className="order-1 relative flex min-h-[42vh] items-center lg:order-2 lg:min-h-[calc(100vh-4rem)] lg:justify-start lg:py-12">
           <div className="relative h-[42vh] w-full overflow-hidden rounded-2xl lg:h-[68vh] lg:max-h-[620px] lg:w-[84%] xl:w-[80%]">
             <video autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover object-center">
               <source src="/videos/nexo.mp4" type="video/mp4" />

@@ -1,30 +1,24 @@
-import { GraduationCap, Target, Lightbulb, Award, ArrowRight } from "lucide-react"
+import { GraduationCap, Target, Award, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const differentials = [
   {
     icon: GraduationCap,
-    title: "Sólida Base Técnica",
-    description: "Formação técnica em Elétrica e Eletrônica, essencial para validar componentes de segurança eletroeletrônicos. Graduação em Engenharia Mecânica e pós-graduação em Gestão Estratégica da Manutenção.",
-    highlight: "2008-2010",
+    title: "Base técnica sólida",
+    description: "Formação em Elétrica e Eletrônica, graduação em Engenharia Mecânica e pós-graduação em Gestão Estratégica da Manutenção para decisões técnicas seguras e aplicáveis no chão de fábrica.",
+    highlight: "Expertise",
   },
   {
     icon: Target,
     title: "Foco em Continuidade",
-    description: "Abordagem voltada para a otimização de processos, evitando que a segurança prejudique a produtividade. Soluções que equilibram conformidade e eficiência operacional.",
+    description: "Segurança integrada à operação: soluções que garantem conformidade sem travar a produção, com foco em produtividade e eficiência contínua.",
     highlight: "Produtividade",
   },
   {
-    icon: Lightbulb,
-    title: "Especialização Contínua",
-    description: "Pós-graduação em Engenharia de Segurança do Trabalho (Conclusão 2026) e pós-graduação em Planejamento Estratégico de Manutenção, garantindo atualização técnica constante e conhecimento das normas mais recentes.",
-    highlight: "Em andamento",
-  },
-  {
     icon: Award,
-    title: "Experiência Comprovada",
-    description: "15 anos de atuação em manutenção industrial e retrofit. Conhecimento prático de campo que garante soluções tecnicamente viáveis.",
+    title: "Experiência comprovada",
+    description: "15 anos de atuação em manutenção industrial e retrofit, com experiência prática de campo para entregar soluções viáveis e de rápida aplicação.",
     highlight: "15 anos",
   },
 ]
@@ -32,10 +26,6 @@ const differentials = [
 export function Differentials() {
   return (
     <section id="diferenciais" className="py-20 bg-muted/30 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-t from-accent/5 to-transparent" />
-      
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           {/* Left - Header */}
@@ -59,7 +49,7 @@ export function Differentials() {
           </div>
 
           {/* Right - Cards Grid */}
-          <div className="lg:col-span-3 grid sm:grid-cols-2 gap-4">
+          <div className="lg:col-span-3 grid sm:grid-cols-3 gap-4">
             {differentials.map((item, index) => (
               <div 
                 key={item.title}

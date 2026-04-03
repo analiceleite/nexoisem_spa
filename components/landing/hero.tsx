@@ -129,7 +129,7 @@ export function Hero() {
             <div className="animate-slide-in-up mt-4 grid grid-cols-3 gap-3 pt-4 opacity-0 delay-400 sm:gap-4 sm:pt-8">
               {[
                 { value: "100+", label: "Máquinas Analisadas", delay: 400 },
-                { value: "100%", label: "Conformidade com Normas Regulamentadoras", delay: 500 },
+                { value: "100%", label: "Conformidade com NRs", delay: 500 },
                 { value: "15+", label: "Anos de Experiência", delay: 600 },
               ].map((stat, idx) => (
                 <div

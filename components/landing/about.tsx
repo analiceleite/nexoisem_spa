@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Building, MapPin, GraduationCap, Award, Briefcase, Users, Star, Zap } from "lucide-react"
+import { Building, MapPin, Award, Briefcase, Users, Star, Zap } from "lucide-react"
 
 export function About() {
   return (
@@ -31,7 +31,7 @@ export function About() {
             </span>
           </h2>
           <p className="text-base sm:text-lg text-secondary-foreground/70 leading-relaxed">
-            União de expertise técnica e visão comercial para entregar soluções completas em engenharia industrial.
+            A NEXO ISEM - Engenharia Conectada ao Futuro - nasceu da união entre expertise técnica e visão comercial para entregar soluções completas em engenharia industrial.
           </p>
         </div>
 
@@ -46,11 +46,11 @@ export function About() {
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-primary/20 group-hover:border-primary/40 transition-all duration-300">
                 <div className="aspect-[4/5] w-full relative overflow-hidden">
                   <Image
-                    src="/images/harley-profile-v2.jpg"
-                    alt="Harley Ivan - Engenheiro Mecânico e fundador da NEXO ISEM"
+                    src="/images/founders.jpeg"
+                    alt="Harley Inacio e Karin Correa - Fundadores da NEXO ISEM"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent group-hover:via-secondary/30 transition-colors duration-300" />
@@ -60,16 +60,13 @@ export function About() {
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 bg-gradient-to-t from-secondary/98 via-secondary/90 to-secondary/70 backdrop-blur-sm border-t border-primary/20">
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-secondary-foreground mb-1">Harley Ivan</h3>
-                      <p className="text-primary font-semibold text-sm mb-2">Engenheiro Mecânico - CEO</p>
+                      <h3 className="text-lg sm:text-xl font-bold text-secondary-foreground mb-1">Harley Inacio e Karin Correa</h3>
+                      <p className="text-primary font-semibold text-sm mb-2">Fundadores da NEXO ISEM</p>
                     </div>
                     <div className="p-2 rounded-lg bg-gradient-to-br from-primary/30 to-accent/20 border border-primary/40">
                       <Zap className="h-5 w-5 text-primary" />
                     </div>
                   </div>
-                  <p className="text-xs sm:text-sm text-secondary-foreground/70">
-                    CREA-SC 2237883 • 15+ anos de experiência
-                  </p>
                 </div>
 
                 {/* Corner Accent */}
@@ -78,15 +75,6 @@ export function About() {
 
               {/* Floating Stats Card - Repositioned */}
               <div className="absolute -right-6 sm:-right-8 top-12 p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-secondary border border-primary/30 shadow-xl shadow-primary/20 group-hover:shadow-primary/40 group-hover:border-primary/50 transition-all duration-300 hover:scale-105 opacity-0" style={{ animation: 'slideInUp 0.8s ease-out forwards', animationDelay: '300ms' }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/30 to-accent/20 flex items-center justify-center">
-                    <Briefcase className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">15+</p>
-                    <p className="text-xs text-secondary-foreground/70 whitespace-nowrap">Anos de Exp.</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -96,43 +84,25 @@ export function About() {
             {/* Description Text */}
             <div className="space-y-4 text-secondary-foreground/80 leading-relaxed">
               <p className="text-sm sm:text-base">
-                A <strong className="text-secondary-foreground">NEXO ISEM Análise em Equipamentos</strong> nasceu da união de expertise técnica e visão comercial.
-                Fundada por <strong className="text-primary">Harley Ivan Venicius Inácio</strong>, Engenheiro Mecânico com vasta formação técnica,
-                e <strong className="text-secondary-foreground">Karin</strong>, responsável pela área comercial.
+                A <strong className="text-secondary-foreground">NEXO ISEM</strong> nasceu da união entre a expertise técnica e a visão comercial de seus fundadores.
+                <strong className="text-secondary-foreground"> Harley Ivan Venicius Inacio</strong>, Engenheiro Mecânico com vasta formação técnica, e
+                <strong className="text-secondary-foreground"> Karin Cristina Correa da Silva</strong>, formada em Administração e com amplo conhecimento em atendimento de clientes com valores agregados.
               </p>
               <p className="text-sm sm:text-base">
-                Com experiência sólida em manutenção industrial e retrofit, nossa equipe entende que
-                a segurança não pode ser um obstáculo para a produtividade. Por isso, desenvolvemos
-                soluções que garantem conformidade legal enquanto otimizam seus processos.
+                Karin é responsável pelas áreas comercial e financeira, enquanto Harley lidera a frente técnica.
+                Essa combinação fortalece um atendimento consultivo, com segurança técnica, foco em produtividade
+                e soluções alinhadas aos desafios reais da indústria.
               </p>
             </div>
 
             {/* Credentials Grid */}
-            <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+            <div className="grid sm:grid-cols-1 gap-3 sm:gap-4">
               {[
                 {
-                  icon: GraduationCap,
-                  title: "Formação Técnica",
-                  desc: "Técnico em Elétrica (2008) e Eletrônica (2010)",
-                  delay: 0
-                },
-                {
                   icon: Award,
-                  title: "Especialização",
-                  desc: "Gestão Estratégica da Manutenção",
-                  delay: 100
-                },
-                {
-                  icon: GraduationCap,
-                  title: "Pós-Graduação",
-                  desc: "Eng. de Segurança do Trabalho (em andamento)",
-                  delay: 200
-                },
-                {
-                  icon: Users,
-                  title: "Equipe",
-                  desc: "Harley (Técnico) + Karin (Comercial)",
-                  delay: 300
+                  title: "Expertise",
+                  desc: <>Mais de <span className="font-semibold text-emerald-500">15 anos</span> de experiência em eletrônica, mecânica, segurança do trabalho e manutenção industrial</>,
+                  delay: 0
                 }
               ].map((item, idx) => (
                 <div
@@ -224,3 +194,9 @@ export function About() {
     </section>
   )
 }
+
+
+
+
+
+

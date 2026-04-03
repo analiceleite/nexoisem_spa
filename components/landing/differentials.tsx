@@ -18,7 +18,7 @@ const differentials = [
   {
     icon: Lightbulb,
     title: "Especialização Contínua",
-    description: "Pós-graduação em Engenharia de Segurança do Trabalho (Conclusão 2026), garantindo atualização técnica constante e conhecimento das normas mais recentes.",
+    description: "Pós-graduação em Engenharia de Segurança do Trabalho (Conclusão 2026) e pós-graduação em Planejamento Estratégico de Manutenção, garantindo atualização técnica constante e conhecimento das normas mais recentes.",
     highlight: "Em andamento",
   },
   {
@@ -52,7 +52,7 @@ export function Differentials() {
             </p>
             <Button asChild className="group bg-secondary hover:bg-secondary/90 text-secondary-foreground">
               <Link href="#contato">
-                Fale com um Especialista
+                Fale com um de nossos especialistas
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>

@@ -105,8 +105,7 @@ export function ManuTech() {
           </h2>
 
           <p className="text-base sm:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto text-balance">
-            Sistema completo de gestão de manutenção industrial. Acompanhe cada ação realizada
-            durante o tempo de máquina parada e tome decisões baseadas em dados reais.
+            A NEXO ISEM, apresenta ao mercado soluções como a Manu-tech, um sistema completo de gestão de manutenção industrial focado em reduzir custos e potencializar a eficiência operacional. Acompanhe cada ação realizada durante o tempo de máquina parada e tome decisões baseadas em dados reais.
           </p>
         </div>
 
@@ -156,8 +155,8 @@ export function ManuTech() {
                 {timelineSteps.map((step, index) => (
                   <div key={step.label} className="flex items-center gap-3 sm:gap-4 relative group/item opacity-0" style={{ animation: 'slideInUp 0.8s ease-out forwards', animationDelay: `${300 + index * 80}ms` }}>
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${index === timelineSteps.length - 1
-                        ? 'bg-gradient-to-br from-primary to-accent text-white scale-110 shadow-lg shadow-primary/50'
-                        : 'bg-white/10 text-white/80 group-hover/item:bg-white/20 group-hover/item:text-white'
+                      ? 'bg-gradient-to-br from-primary to-accent text-white scale-110 shadow-lg shadow-primary/50'
+                      : 'bg-white/10 text-white/80 group-hover/item:bg-white/20 group-hover/item:text-white'
                       }`}>
                       <step.icon className="h-5 w-5" />
                     </div>
@@ -165,11 +164,6 @@ export function ManuTech() {
                       <p className="text-white font-medium text-xs sm:text-sm group-hover/item:text-primary transition-colors duration-300">{step.label}</p>
                       <p className="text-white/50 text-xs">{step.time}</p>
                     </div>
-                    {index === timelineSteps.length - 1 && (
-                      <div className="px-2 py-1 rounded-full bg-gradient-to-r from-primary/30 to-accent/20 text-primary text-xs font-medium border border-primary/30 group-hover/item:border-primary/60 transition-colors duration-300">
-                        1h total
-                      </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -246,12 +240,7 @@ export function ManuTech() {
                 <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/40 hover:bg-white/10 transition-all duration-300 group/notif cursor-pointer">
                   <Mail className="h-4 w-4 text-primary group-hover/notif:scale-125 transition-transform duration-300" />
                   <span className="text-white/80 text-xs sm:text-sm font-medium">E-mail</span>
-                  <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-primary/30 to-primary/10 text-primary text-xs border border-primary/30 group-hover/notif:border-primary/60 transition-colors duration-300">Ativo</span>
-                </div>
-                <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-emerald-400/40 hover:bg-white/10 transition-all duration-300 group/notif cursor-pointer">
-                  <MessageCircle className="h-4 w-4 text-emerald-400 group-hover/notif:scale-125 transition-transform duration-300" />
-                  <span className="text-white/80 text-xs sm:text-sm font-medium">WhatsApp</span>
-                  <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-emerald-500/30 to-emerald-500/10 text-emerald-400 text-xs border border-emerald-400/30 group-hover/notif:border-emerald-400/60 transition-colors duration-300">Fase 2</span>
+                  <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-emerald-500/30 to-emerald-500/10 text-emerald-400 text-xs border border-emerald-400/30 group-hover/notif:border-emerald-400/60 transition-colors duration-300">Ativo</span>
                 </div>
               </div>
             </div>

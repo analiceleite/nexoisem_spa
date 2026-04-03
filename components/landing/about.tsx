@@ -37,7 +37,7 @@ export function About() {
           </div>
 
           <h2 className="text-balance text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Conheca a{" "}
+            Conheça a{" "}
             <span className="relative inline-block">
               <span className="relative z-10 bg-gradient-to-r from-emerald-400 via-green-400 to-emerald-300 bg-clip-text text-transparent">
                 NEXO ISEM

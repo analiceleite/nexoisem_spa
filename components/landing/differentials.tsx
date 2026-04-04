@@ -6,7 +6,7 @@ const differentials = [
   {
     icon: GraduationCap,
     title: "Base técnica sólida",
-    description: "Formação em Elétrica e Eletrônica, graduação em Engenharia Mecânica e pós-graduação em Gestão Estratégica da Manutenção para decisões técnicas seguras e aplicáveis no chão de fábrica.",
+    description: "Formação em Elétrica e Eletrônica, graduação em Engenharia Mecânica e pós-graduação em Gestão Estratégica da Manutenção para decisões técnicas seguras e aplicáveis no parque fabril.",
     highlight: "Expertise",
   },
   {
@@ -38,7 +38,7 @@ export function Differentials() {
               Nossos <span className="text-primary">Diferenciais</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Combinamos conhecimento técnico aprofundado com experiência prática para entregar soluções que realmente funcionam no chão de fábrica.
+              Combinamos conhecimento técnico aprofundado com experiência prática para entregar soluções que realmente funcionam no parque fabril.
             </p>
             <Button asChild className="group bg-secondary hover:bg-secondary/90 text-secondary-foreground">
               <Link href="#contato">

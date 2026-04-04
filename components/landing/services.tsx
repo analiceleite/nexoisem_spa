@@ -34,7 +34,7 @@ const services = [
   {
     icon: Cpu,
     title: "Consultoria Técnica",
-    description: "Relatórios com indicações de melhorias em Software, Hardware ou Mecânica.",
+    description: "Relatórios com indicações de melhorias em Hardware ou Mecânica.",
     features: ["Análise completa", "Recomendações práticas", "Mitigação de riscos"],
   },
 ]
@@ -55,7 +55,7 @@ export function Services() {
             Soluções Completas em <span className="text-primary">Engenharia Industrial</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Oferecemos uma gama completa de serviços para garantir a conformidade, segurança e eficiência das suas operações.
+            Oferecemos uma gama completa de serviços e softwares para garantir a conformidade, segurança e eficiência das suas operações.
           </p>
         </div>
 

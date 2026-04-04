@@ -8,7 +8,7 @@ const highlights = [
   {
     icon: Smartphone,
     title: "Mobile First",
-    description: "Registro rápido das manutenções direto no chão de fábrica.",
+    description: "Registro rápido das manutenções direto no parque fabril.",
   },
   {
     icon: Monitor,
@@ -58,8 +58,7 @@ export function ManuTech() {
             </h2>
 
             <p className="max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              Sistema de gestão de manutenção industrial para controlar paradas, acompanhar a execução das equipes e
-              priorizar a produtividade com segurança.
+              Oferecemos soluções de software voltadas para gestão de manutenção industrial, com foco em controlar paradas, acompanhar a execução das equipes e priorizar a produtividade com segurança.
             </p>
 
             <div className="space-y-3">
@@ -84,7 +83,7 @@ export function ManuTech() {
                 className="group border border-emerald-700 bg-emerald-700 text-white shadow-md transition-colors duration-300 hover:border-emerald-800 hover:bg-emerald-800"
               >
                 <Link href="#contato">
-                  Solicitar Demonstracao
+                  Solicitar Demonstração
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
@@ -94,7 +93,7 @@ export function ManuTech() {
                 asChild
                 className="group border-emerald-500/60 bg-white text-emerald-800 transition-all duration-300 hover:border-emerald-600 hover:bg-emerald-50 hover:text-emerald-900"
               >
-                <Link href="#contato">Falar com Especialista</Link>
+                <Link href="#contato">Falar com um especialista</Link>
               </Button>
             </div>
           </div>
@@ -123,7 +122,7 @@ export function ManuTech() {
             <div className="mt-4 rounded-xl border border-white/10 bg-black/35 p-4">
               <p className="mb-3 text-sm font-semibold text-white">Fluxo de atendimento</p>
               <div className="space-y-2">
-                {["Parada registrada", "Equipe acionada", "Maquina liberada"].map((step) => (
+                {["Parada registrada", "Equipe acionada", "Máquina liberada"].map((step) => (
                   <div key={step} className="flex items-center gap-2 text-sm text-slate-300">
                     <CheckCircle2 className="h-4 w-4 text-emerald-300" />
                     <span>{step}</span>

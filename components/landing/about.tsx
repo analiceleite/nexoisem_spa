@@ -14,7 +14,7 @@ const cards = [
     icon: Users,
     title: "Segurança como Pilar",
     description:
-      "Comprometimento absoluto com a integridade física e a conformidade legal, unindo engenhariade manutenção à engenharia de segurança",
+      "Comprometimento absoluto com a integridade física e a conformidade legal, unindo engenharia de manutenção à engenharia de segurança",
   },
   {
     icon: Users,
@@ -135,7 +135,7 @@ export function About() {
                   <MapPin className="h-5 w-5 text-emerald-300" />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-wide text-slate-400">Localizacao</p>
+                  <p className="text-xs uppercase tracking-wide text-slate-400">Localização</p>
                   <p className="text-sm font-semibold text-white">Joinville - SC</p>
                 </div>
               </div>

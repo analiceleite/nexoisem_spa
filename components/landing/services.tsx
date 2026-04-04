@@ -3,8 +3,8 @@ import { Shield, FileCheck, Wrench, Cpu, Zap, ClipboardCheck } from "lucide-reac
 const services = [
   {
     icon: Shield,
-    title: "Laudos NR-12",
-    description: "Elaboração de Laudos de Apreciação de Riscos Preliminar conforme NR-12 e ABNT NBR ISO 12100.",
+    title: "Laudos NRs",
+    description: "Elaboração de Laudos de Apreciação de Riscos Preliminar conforme NRs e ABNT NBR ISO 12100.",
     features: ["Identificação de perigos", "Estimativa de riscos", "Medidas de controle"],
   },
   {

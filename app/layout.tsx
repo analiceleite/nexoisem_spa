@@ -7,7 +7,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'NEXO ISEM | Engenharia Conectada ao Futuro',
-  description: 'Engenharia industrial especializada em NR-12, manutenção preventiva e ManuTech - sistema de gestão de manutenção industrial. 15 anos de experiência em Joinville-SC.',
+  description: 'Engenharia industrial especializada em NRs, manutenção preventiva e ManuTech - sistema de gestão de manutenção industrial. 15 anos de experiência em Joinville-SC.',
   generator: 'v0.app',
   icons: {
     icon: [

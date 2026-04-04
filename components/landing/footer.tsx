@@ -11,7 +11,7 @@ const navigation = [
 ]
 
 const services = [
-  "Laudos NR-12",
+  "Laudos NRs",
   "Análise de Riscos",
   "Manutenção Industrial",
   "ManuTech",

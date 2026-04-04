@@ -6,16 +6,22 @@ import { Award, Building, MapPin, Users, Zap } from "lucide-react"
 const cards = [
   {
     icon: Award,
-    title: "Expertise",
+    title: "Eficiência Orientada a Resultados",
     description:
-      "Mais de 15 anos em manutenção industrial com Harley e mais de 20 anos na área comercial com Karin.",
+      "Cada ação de manutenção deve gerar um impacto positivo direto no faturamento e no desempenho produtivo.",
   },
   {
     icon: Users,
-    title: "Equipe",
+    title: "Segurança como Pilar",
     description:
-      "Harley lidera a frente técnica e Karin conduz as áreas comercial e financeira com atendimento consultivo.",
+      "Comprometimento absoluto com a integridade física e a conformidade legal, unindo engenhariade manutenção à engenharia de segurança",
   },
+  {
+    icon: Users,
+    title: "Agilidade Operacional",
+    description:
+      "Garantir fluidez no trânsito das operações, reduzindo tempos de parada e otimizando o ciclo de vida dos equipamentos",
+  }
 ]
 
 export function About() {
@@ -57,11 +63,11 @@ export function About() {
             <div className="relative overflow-hidden rounded-2xl border border-emerald-400/30 bg-white/5 sm:rounded-3xl">
               <div className="relative aspect-[4/5] w-full">
                 <Image
-                  src="/images/founders.jpeg"
+                  src="/images/harley_e_karin_v2.jpeg"
                   alt="Harley Inacio e Karin Correa - Fundadores da NEXO ISEM"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover object-top"
+                  className="object-cover object-[center_top]"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
@@ -70,11 +76,15 @@ export function About() {
               <div className="absolute bottom-0 left-0 right-0 border-t border-emerald-400/20 bg-black/65 p-5 backdrop-blur-sm sm:p-6">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <h3 className="text-lg font-bold text-white sm:text-xl">Harley Inacio e Karin Correa</h3>
-                    <p className="mt-1 text-sm font-medium text-emerald-300">Fundadores da NEXO ISEM</p>
-                  </div>
-                  <div className="rounded-lg border border-emerald-400/30 bg-emerald-500/10 p-2">
-                    <Zap className="h-5 w-5 text-emerald-300" />
+                    <figure className="m-0 w-full">
+                      <blockquote className="mt-1 text-[14px] font-medium italic leading-relaxed text-white tracking-wide">
+                        <span className="text-[14px] align-top mr-3 text-emerald-300">“</span>                        Não apenas consertamos máquinas; conectamos inteligência à operação. Onde a indústria vê um gargalo, a NEXO ISEM entrega
+                        performance. Nossa jornada é construída sobre décadas de vivência fabril, traduzidas agora em soluções digitais e seguras para a
+                        nova era industrial
+                        <span className="text-[14px] align-bottom ml-3 text-emerald-300">”</span>
+                      </blockquote>
+                      <figcaption className="mt-2 text-emerald-300 text-sm font-semibold not-italic text-right">— Harley e Karin Inacio</figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>
@@ -84,19 +94,17 @@ export function About() {
           <div className="space-y-6 sm:space-y-8">
             <div className="space-y-4 leading-relaxed text-slate-300">
               <p className="text-sm sm:text-base">
-                A <strong className="text-white">NEXO ISEM</strong> nasceu da união entre a expertise técnica de{" "}
-                <strong className="text-white">Harley Ivan Venicius Inacio</strong>, Engenheiro Mecânico com ampla
-                formação técnica, e a visão comercial de{" "}
-                <strong className="text-white">Karin Cristina Correa da Silva</strong>, formada em Administração e com
-                forte atuação em relacionamento com clientes.
+                A <strong className="text-white">NEXO ISEM</strong> nasce com a missão de transformar a gestão de manutenção industrial através da convergência entre a experiência prática de campo e as tecnologias da <strong>Indústria 4.0</strong>. Nosso propósito é converter pontos sensíveis em soluções eficazes, garantindo a máxima performance dos ativos e impulsionando a rentabilidade e o sucesso contínuo de nossos clientes.
+              </p>
+              <p>
+                Nossa visão é ser a principal referência em Joinville e região na <strong>digitalização de processos de manutenção industrial</strong>, sendo reconhecida pela capacidade de <strong>integrar inteligência analítica, segurança do trabalho e eficiência operacional</strong> no coração das fábricas.
               </p>
               <p className="text-sm sm:text-base">
-                Essa combinação fortalece um atendimento consultivo, com foco em produtividade, segurança técnica e
-                soluções alinhadas aos desafios reais da indústria.
+                Essa fusão resulta em uma atuação orientada por dados, que eleva a produtividade, reforça a segurança técnica e entrega resultados mensuráveis para quem busca solucionar os desafios reais da indústria.
               </p>
             </div>
 
-            <div className="grid gap-3 sm:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               {cards.map((item) => (
                 <div
                   key={item.title}
@@ -105,15 +113,7 @@ export function About() {
                   <item.icon className="mb-3 h-6 w-6 text-emerald-300" />
                   <h4 className="mb-1 text-sm font-semibold text-white sm:text-base">{item.title}</h4>
                   <p className="text-xs text-slate-300 sm:text-sm">
-                    {item.title === "Expertise" ? (
-                      <>
-                        Mais de <span className="font-semibold text-emerald-400">15 anos</span> em manutenção
-                        industrial com Harley e mais de <span className="font-semibold text-emerald-400">20 anos</span>{" "}
-                        na área comercial com Karin.
-                      </>
-                    ) : (
-                      item.description
-                    )}
+                    {item.description}
                   </p>
                 </div>
               ))}
